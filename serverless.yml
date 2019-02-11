@@ -1,4 +1,4 @@
-service: serverless-flask
+service: python-flask
 
 plugins:
   - serverless-python-requirements
@@ -37,6 +37,14 @@ functions:
     events:
       - http: ANY /
       - http: "ANY {proxy+}"
+  getUser:
+    handler: wsgi.handler
+    events:
+      - http: "GET /users/{proxy+}"
+  createUser:
+    handler: wsgi.handler
+    events:
+      - http: "POST /users"
 
 resources:
   Resources:

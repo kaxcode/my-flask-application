@@ -1,16 +1,24 @@
 {
-  "name": "my-flask-application",
+  "name": "python-flask",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaxcode/python-flask.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaxcode/python-flask/issues"
+  },
+  "homepage": "https://github.com/kaxcode/python-flask#readme",
   "devDependencies": {
-    "serverless-python-requirements": "^4.2.5",
-    "serverless-wsgi": "^1.7.0"
+    "serverless-python-requirements": "^4.3.0",
+    "serverless-wsgi": "^1.7.1"
   }
 }
